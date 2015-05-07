@@ -1,0 +1,201 @@
+
+/* ==========================================================================
+	 Logo and logo animation
+	 ========================================================================== */
+
+.logo svg {
+	width: 100%;
+}
+
+.logo {
+	width: 90%;
+	padding-top: 20px;
+	text-align: center;
+	margin: auto;
+	@media only screen and (orientation:landscape) and (max-width: 40em) {
+		width: 50%;
+	}
+	@media only screen and (min-width: 40.063em) {
+		width: 400px;
+	}
+}
+
+circle,
+path {
+	stroke: white;
+	fill: white;
+	fill-opacity: 0;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+circle {
+	stroke-width: 4;
+	fill: none;
+	stroke-dasharray: 0 1760;
+	@include animation(writeCircle 2s 1 ease-out);
+	@include animation-fill-mode(forwards);
+}
+
+.logo path {
+	visibility: hidden;
+}
+
+$animateFillValues: fillColor 1s 8s 1 ease-in-out;
+
+.meilan-l {
+	stroke-dasharray: 0 585;
+	@include animation(writeL 1s 2s 1 ease-out, $animateFillValues);
+	@include animation-fill-mode(forwards);
+}
+
+.meilan-m {
+	stroke-dasharray: 0 678;
+	@include animation(writeM 2s 2.5s 1 ease-in-out, $animateFillValues);
+	@include animation-fill-mode(forwards);
+}
+
+.meilan-e {
+	stroke-dasharray: 0 800;
+	@include animation(writeE 2s 4s 1 ease-in-out, $animateFillValues);
+	@include animation-fill-mode(forwards);
+}
+
+.meilan-i {
+	stroke-dasharray: 0 300;
+	@include animation(writeI 2s 5s 1 ease-in-out, $animateFillValues);
+	@include animation-fill-mode(forwards);
+}
+
+.meilan-a {
+	stroke-dasharray: 0 800;
+	@include animation(writeA 2s 6s 1 ease-in-out, $animateFillValues);
+	@include animation-fill-mode(forwards);
+}
+
+.meilan-n {
+	stroke-dasharray: 0 800;
+	@include animation(writeN 2s 7s 1 ease-in-out, $animateFillValues);
+	@include animation-fill-mode(forwards);
+}
+
+.logo svg {
+	-webkit-filter: blur(0);
+	@include animation(blurLogo 1s 8s 1 ease-in-out);
+	@include animation-fill-mode(forwards);
+}
+
+
+
+
+/* keyframes */
+@include keyframes(writeCircle) {
+	0% {
+		stroke-dasharray: 0 1760;
+	}
+	100% {
+		stroke-dasharray: 1760 1760;
+	}
+}
+
+@include keyframes(writeL) {
+	0% {
+		stroke-dasharray: 0 585;
+	}
+	100% {
+		visibility: visible;
+		stroke-dasharray: 585 585;
+	}
+}
+
+@include keyframes(writeM) {
+	0% {
+		stroke-dasharray: 0 678;
+	}
+	100% {
+		visibility: visible;
+		stroke-dasharray: 678 678;
+	}
+}
+
+@include keyframes(writeE) {
+	0% {
+		stroke-dasharray: 0 800;
+	}
+	100% {
+		visibility: visible;
+		stroke-dasharray: 800 800;
+	}
+}
+
+@include keyframes(writeI) {
+	0% {
+		stroke-dasharray: 0 300;
+	}
+	100% {
+		visibility: visible;
+		stroke-dasharray: 300 300;
+	}
+}
+
+@include keyframes(writeA) {
+	0% {
+		stroke-dasharray: 0 800;
+	}
+	100% {
+		visibility: visible;
+		stroke-dasharray: 800 800;
+	}
+}
+
+@include keyframes(writeN) {
+	0% {
+		stroke-dasharray: 0 800;
+	}
+	100% {
+		visibility: visible;
+		stroke-dasharray: 800 800;
+	}
+}
+
+@include keyframes(fillColor) {
+	0% {
+		fill-opacity: 0;
+	}
+	50% {
+		fill-opacity: 1;
+		stroke-width: 4;
+		fill: aqua;
+		stroke: aqua;
+	}
+	100% {
+		fill: white;
+		stroke-color: white;
+		stroke-width: 1;
+		fill-opacity: 1;
+	}
+}
+
+@include keyframes(blurLogo) {
+	0% {
+		-webkit-filter: blur(0);
+	}
+	50% {
+		-webkit-filter: blur(2px);
+	}
+	100% {
+		-webkit-filter: blur(0)
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

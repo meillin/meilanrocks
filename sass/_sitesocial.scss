@@ -1,0 +1,33 @@
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		width: 100%;
+		display: inline-block;
+		@media only screen and (min-width: 40.063em) {
+			font-size: 3em;
+		}
+	}
+	a {
+		color: aqua;
+		font-family: monospace;
+		vertical-align: text-top;
+	}
+}
+
+
+
+.icon-svg {
+	position: relative;
+	width: 30px;
+	height: 30px;
+
+	path {
+		stroke: aqua;
+	}
+
+	@media only screen and (min-width: 40.063em) {
+		transform: scale(1.5);
+	}
+}
