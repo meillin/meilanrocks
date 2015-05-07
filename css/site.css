@@ -818,19 +818,26 @@ body {
 /* line 26, ../sass/_sitetype.scss */
 h1, h2, h3, h4, h5 {
   font-weight: lighter;
+  margin: 20px;
 }
 
-/* line 30, ../sass/_sitetype.scss */
+/* line 31, ../sass/_sitetype.scss */
 h1 {
   margin-top: 0;
   line-height: 30px;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 30, ../sass/_sitetype.scss */
+  /* line 31, ../sass/_sitetype.scss */
   h1 {
     font-size: 5em;
     line-height: 75px;
   }
+}
+
+/* line 40, ../sass/_sitetype.scss */
+h2 {
+  font-size: 4em;
+  line-height: 60px;
 }
 
 /* ==========================================================================
@@ -1285,4 +1292,69 @@ ul a {
 /* line 1, ../sass/_footer.scss */
 footer {
   display: none;
+}
+
+/* line 2, ../sass/_savvior-grid.scss */
+#grid * {
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 5, ../sass/_savvior-grid.scss */
+#grid img {
+  border: 1px solid white;
+  width: 100%;
+}
+
+/* line 10, ../sass/_savvior-grid.scss */
+#grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 15, ../sass/_savvior-grid.scss */
+#grid[data-columns]::before {
+  clear: both;
+  display: block;
+  padding: 10px;
+  font: 1em normal Menlo, Consolas, monospace;
+}
+
+/* line 33, ../sass/_savvior-grid.scss */
+.box {
+  margin-bottom: 20px;
+}
+
+/* line 36, ../sass/_savvior-grid.scss */
+.box:last-child {
+  margin-bottom: 0;
+}
+
+/* line 46, ../sass/_savvior-grid.scss */
+.column {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* line 47, ../sass/_savvior-grid.scss */
+.size-1of1 {
+  width: 100%;
+}
+
+/* line 48, ../sass/_savvior-grid.scss */
+.size-1of2 {
+  width: 50%;
+}
+
+/* line 49, ../sass/_savvior-grid.scss */
+.size-1of3 {
+  width: 33.33333%;
+}
+
+/* line 50, ../sass/_savvior-grid.scss */
+.size-1of4 {
+  width: 25%;
 }

@@ -25,6 +25,7 @@ body {
 
 h1, h2, h3, h4, h5 {
 	font-weight: lighter;
+	margin: 20px;
 }
 
 h1 {
@@ -34,4 +35,9 @@ h1 {
 		font-size: 5em;
 		line-height: 75px;
 	}
+}
+
+h2 {
+	font-size: 4em;
+	line-height: 60px;
 }
