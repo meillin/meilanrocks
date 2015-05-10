@@ -882,7 +882,7 @@ path {
   stroke-miterlimit: 10;
 }
 
-/* line 33, ../sass/_logo.scss */
+/* line 36, ../sass/_logo.scss */
 circle {
   stroke-width: 4;
   fill: none;
@@ -895,12 +895,12 @@ circle {
   animation-fill-mode: forwards;
 }
 
-/* line 41, ../sass/_logo.scss */
+/* line 44, ../sass/_logo.scss */
 .logo path {
   visibility: hidden;
 }
 
-/* line 47, ../sass/_logo.scss */
+/* line 48, ../sass/_logo.scss */
 .meilan-l {
   stroke-dasharray: 0 585;
   -moz-animation: writeL 1s 2s 1 ease-out, fillColor 1s 8s 1 ease-in-out;
@@ -911,7 +911,7 @@ circle {
   animation-fill-mode: forwards;
 }
 
-/* line 53, ../sass/_logo.scss */
+/* line 54, ../sass/_logo.scss */
 .meilan-m {
   stroke-dasharray: 0 678;
   -moz-animation: writeM 2s 2.5s 1 ease-in-out, fillColor 1s 8s 1 ease-in-out;
@@ -922,7 +922,7 @@ circle {
   animation-fill-mode: forwards;
 }
 
-/* line 59, ../sass/_logo.scss */
+/* line 60, ../sass/_logo.scss */
 .meilan-e {
   stroke-dasharray: 0 800;
   -moz-animation: writeE 2s 4s 1 ease-in-out, fillColor 1s 8s 1 ease-in-out;
@@ -933,7 +933,7 @@ circle {
   animation-fill-mode: forwards;
 }
 
-/* line 65, ../sass/_logo.scss */
+/* line 66, ../sass/_logo.scss */
 .meilan-i {
   stroke-dasharray: 0 300;
   -moz-animation: writeI 2s 5s 1 ease-in-out, fillColor 1s 8s 1 ease-in-out;
@@ -944,7 +944,7 @@ circle {
   animation-fill-mode: forwards;
 }
 
-/* line 71, ../sass/_logo.scss */
+/* line 72, ../sass/_logo.scss */
 .meilan-a {
   stroke-dasharray: 0 800;
   -moz-animation: writeA 2s 6s 1 ease-in-out, fillColor 1s 8s 1 ease-in-out;
@@ -955,7 +955,7 @@ circle {
   animation-fill-mode: forwards;
 }
 
-/* line 77, ../sass/_logo.scss */
+/* line 78, ../sass/_logo.scss */
 .meilan-n {
   stroke-dasharray: 0 800;
   -moz-animation: writeN 2s 7s 1 ease-in-out, fillColor 1s 8s 1 ease-in-out;
@@ -966,7 +966,7 @@ circle {
   animation-fill-mode: forwards;
 }
 
-/* line 83, ../sass/_logo.scss */
+/* line 84, ../sass/_logo.scss */
 .logo svg {
   -webkit-filter: blur(0);
   -moz-animation: blurLogo 1s 8s 1 ease-in-out;

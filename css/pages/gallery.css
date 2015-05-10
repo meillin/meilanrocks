@@ -1,0 +1,27 @@
+/* line 1, ../../sass/pages/gallery.scss */
+body {
+  background: white;
+  color: #333;
+}
+
+/* line 5, ../../sass/pages/gallery.scss */
+.fluid-container {
+  padding: 0 20px;
+}
+
+/* line 8, ../../sass/pages/gallery.scss */
+circle, path {
+  stroke: #000;
+}
+
+/* line 11, ../../sass/pages/gallery.scss */
+.logo {
+  width: 100px;
+  margin: initial;
+  padding: 20px 0;
+}
+
+/* line 16, ../../sass/pages/gallery.scss */
+video {
+  width: 100%;
+}

@@ -30,11 +30,14 @@ path {
 	stroke-miterlimit: 10;
 }
 
+$animationRepeat: 1;
+$animateFillValues: fillColor 1s 8s $animationRepeat ease-in-out;
+
 circle {
 	stroke-width: 4;
 	fill: none;
 	stroke-dasharray: 0 1760;
-	@include animation(writeCircle 2s 1 ease-out);
+	@include animation(writeCircle 2s $animationRepeat ease-out);
 	@include animation-fill-mode(forwards);
 }
 
@@ -42,47 +45,45 @@ circle {
 	visibility: hidden;
 }
 
-$animateFillValues: fillColor 1s 8s 1 ease-in-out;
-
 .meilan-l {
 	stroke-dasharray: 0 585;
-	@include animation(writeL 1s 2s 1 ease-out, $animateFillValues);
+	@include animation(writeL 1s 2s $animationRepeat ease-out, $animateFillValues);
 	@include animation-fill-mode(forwards);
 }
 
 .meilan-m {
 	stroke-dasharray: 0 678;
-	@include animation(writeM 2s 2.5s 1 ease-in-out, $animateFillValues);
+	@include animation(writeM 2s 2.5s $animationRepeat ease-in-out, $animateFillValues);
 	@include animation-fill-mode(forwards);
 }
 
 .meilan-e {
 	stroke-dasharray: 0 800;
-	@include animation(writeE 2s 4s 1 ease-in-out, $animateFillValues);
+	@include animation(writeE 2s 4s $animationRepeat ease-in-out, $animateFillValues);
 	@include animation-fill-mode(forwards);
 }
 
 .meilan-i {
 	stroke-dasharray: 0 300;
-	@include animation(writeI 2s 5s 1 ease-in-out, $animateFillValues);
+	@include animation(writeI 2s 5s $animationRepeat ease-in-out, $animateFillValues);
 	@include animation-fill-mode(forwards);
 }
 
 .meilan-a {
 	stroke-dasharray: 0 800;
-	@include animation(writeA 2s 6s 1 ease-in-out, $animateFillValues);
+	@include animation(writeA 2s 6s $animationRepeat ease-in-out, $animateFillValues);
 	@include animation-fill-mode(forwards);
 }
 
 .meilan-n {
 	stroke-dasharray: 0 800;
-	@include animation(writeN 2s 7s 1 ease-in-out, $animateFillValues);
+	@include animation(writeN 2s 7s $animationRepeat ease-in-out, $animateFillValues);
 	@include animation-fill-mode(forwards);
 }
 
 .logo svg {
 	-webkit-filter: blur(0);
-	@include animation(blurLogo 1s 8s 1 ease-in-out);
+	@include animation(blurLogo 1s 8s $animationRepeat ease-in-out);
 	@include animation-fill-mode(forwards);
 }
 
