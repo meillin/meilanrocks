@@ -22,6 +22,6 @@ circle, path {
 }
 
 /* line 16, ../../sass/pages/gallery.scss */
-video {
+video, img {
   width: 100%;
 }
