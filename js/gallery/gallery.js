@@ -50,10 +50,16 @@
 
 
 	app.factory('dataFactory', ['$http', function($http){
-		var url = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=cc31489e474eea4a278adf54310b1fb7&photoset_id=72157652609395672&user_id=132277818%40N04&extras=url_m&per_page=&format=json&nojsoncallback=1";		var dataFactory = {};
+		var req = {
+			method: 'GET',
+			url: 'data/flickr.php?galleryId=72157652609395672',
+			format: 'json'
+		}
+
+		var dataFactory = {};
 
 		dataFactory.get = function() {
-			return $http.get(url);
+			return $http(req);
 		}
 
 		return dataFactory;
