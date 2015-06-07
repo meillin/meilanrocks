@@ -795,6 +795,12 @@ section {
   padding: 20px;
 }
 
+/* line 33, ../sass/_global.scss */
+iframe {
+  width: 100%;
+  height: auto;
+}
+
 @font-face {
   font-family: "yellowPeas";
   src: url("../fonts/yellowpeas.eot");

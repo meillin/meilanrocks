@@ -97,7 +97,12 @@
 			</div> -->
 
 			<div id="gallery" class="grid" ng-controller="galleryController as gallery">
-					<div class="box" ng-repeat="photo in gallery.photos"><img ng-src="{{ photo.url_m }}" /></div>
+				<div class="box">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/1CTced9CMMk?rel=0&showinfo=0&autohide=1&theme=light&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+				<div class="box" ng-repeat="photo in gallery.photos"><img ng-src="{{ photo.url_m }}" /></div>
+
 			</div>
 
 		</div>
